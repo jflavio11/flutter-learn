@@ -12,8 +12,11 @@ class App1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: "My first app",
-        theme:
-            ThemeData(primaryColor: Colors.black54, primarySwatch: Colors.blue),
+        theme: ThemeData(
+            primaryColor: Colors.black54,
+            primarySwatch: Colors.blue,
+            appBarTheme: const AppBarTheme(
+                backgroundColor: Colors.white, foregroundColor: Colors.blue)),
         home: const HomeScreen());
   }
 }
